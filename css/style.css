@@ -50,7 +50,7 @@ h6 {
   /* font-family: 'EB Garamond', serif; */
   /* font-weight: 600; */
   /* font-style: italic; */
-  color: rgb(40, 37, 37);
+  color: rgb(83, 81, 81);
 }
 
 a {
@@ -510,7 +510,7 @@ a:focus {
   z-index: 1;
 }
 
-.section-header h2::before {
+/* .section-header h2::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -521,9 +521,9 @@ a:focus {
   border-top: 1px solid #aa9166;
   border-bottom: 1px solid #aa9166;
   z-index: -1;
-}
+} */
 
-.section-header h2::after {
+/* .section-header h2::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -534,7 +534,7 @@ a:focus {
   border-top: 1px solid #aa9166;
   border-bottom: 1px solid #aa9166;
   z-index: -1;
-}
+} */
 
 @media (max-width: 767.98px) {
   .section-header h2 {
@@ -548,7 +548,7 @@ a:focus {
 .feature-top {
   position: relative;
   background: #121518;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
 .feature-top .col-md-3 {
@@ -617,17 +617,20 @@ a:focus {
 /********** About CSS **********/
 /*******************************/
 .about {
-  position: relative;
+  /* position: relative; */
   width: 100%;
-  padding: 45px 0;
+  padding: 10rem 0;
   background-image: url("/img/HandShake.JPG");
+
 
   /* background-image:url("/img/logo3.jpeg"); */
   background-size: cover;
 }
 
+
 .about .section-header {
   margin-bottom: 30px;
+  
 }
 
 /* .about .about-img {
@@ -649,21 +652,19 @@ a:focus {
 }
 
 .about .about-text a.btn {
-  margin-top: 15px;
-  padding: 15px 35px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  /* padding: 15px 35px; */
+  /* font-size: 16px; */
+  float: right;
+  margin: 1rem;
   color: #efede9;
-  border-radius: 0;
-  background: #121518;
+  border-radius: 1;
+  background: #26292c;
   transition: 0.3s;
 }
 
 .about .about-text a.btn:hover {
   color: #121518;
-  background: #57544f;
+  background: #bc8746;
 }
 
 @media (max-width: 767.98px) {
@@ -679,7 +680,7 @@ a:focus {
 .service {
   position: relative;
   width: 100%;
-  padding: 45px 0 15px 0;
+  /* padding: 45px 0 15px 0; */
 }
 
 .service .service-item {
@@ -1773,10 +1774,12 @@ a:focus {
 .footer .copyright p {
   margin: 0;
   color: #999999;
+  font-size: smaller;
 }
 
 .footer .copyright .col-md-6:last-child p {
   text-align: right;
+  
 }
 
 .footer .copyright p a {
