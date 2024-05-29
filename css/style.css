@@ -430,10 +430,7 @@ a:focus {
 /*******************************/
 .page-header {
   position: relative;
-  margin-bottom: 45px;
-  padding: 90px 0;
   text-align: center;
-  background: rgb(95, 24, 24);
 }
 
 .page-header h2 {
@@ -616,18 +613,23 @@ a:focus {
 /*******************************/
 /********** About CSS **********/
 /*******************************/
-.about {
-  /* position: relative; */
-  width: 100%;
-  padding: 10rem 0;
-  background-image: url("/img/HandShake.JPG");
 
-
-  /* background-image:url("/img/logo3.jpeg"); */
-  background-size: cover;
+.about-heading{
+  text-align: center;
 }
-
-
+.about-text{
+  text-align: center;
+}
+.mission{
+  display: flex;
+  gap: 2rem;
+  
+}
+.vision{
+  display: flex;
+  gap: 2rem;
+  
+}
 .about .section-header {
   margin-bottom: 30px;
   
