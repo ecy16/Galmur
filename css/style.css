@@ -435,11 +435,11 @@ a:focus {
 
 .page-header h2 {
   position: relative;
-  color: gray;
+  color:rgb(18, 34, 48);
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
+  margin-top: 10px;
+  padding-top: 5px;
 }
 
 .page-header h2::after {
@@ -456,11 +456,11 @@ a:focus {
   position: relative;
   padding: 0 12px;
   font-size: 22px;
-  color: gray;
+  color:rgb(18, 34, 48);
 }
 
 .page-header a:hover {
-  color: #ffffff;
+  color: #5e70a2;
 }
 
 .page-header a::after {
@@ -613,11 +613,7 @@ a:focus {
 /*******************************/
 /********** About CSS **********/
 /*******************************/
-.about{
-  /* background-image: url("/img/logo2.jpeg"); */
-  /* background-repeat: no-repeat; */
-  
-}
+
 .about-heading{
   text-align: center;
 }
@@ -649,19 +645,117 @@ h2{
   margin-bottom: 30px;
   
 }
-
-/* .about .about-img {
-  height: 100%;
+.left{
+  background-color: #454545;
   width: 100%;
-  padding: 10px;
-  background-image: url("");
-} */
+  height: 100%;
+  background-image: url(/img/Attoney.JPG);
+  object-fit: cover;
+}
 
 /* .about .about-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 } */
+
+
+
+
+.meet-container{
+  color: #000000;
+}
+.gali{
+  color:rgb(18, 34, 48);
+text-decoration: underline;
+}
+.Benson{
+  color:rgb(18, 34, 48);
+text-decoration: underline;
+}
+
+
+
+.about .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+}
+
+.about .about-img {
+  text-align: center;
+}
+
+.about .about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .section-header h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about .about-text,
+.about .team-text {
+text-align: center;  
+}
+
+.about .team-social {
+  margin-top: 15px;
+}
+
+.about .team-social a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.about .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .about .about-text p {
   font-size: 16px;
@@ -692,8 +786,7 @@ h2{
 }
 .med-container{
   /* display: flex; */
-  gap: 2rem;
-  margin: 2rem;
+  background-image: url('/img/medlaw1.jpg');
 }
 
 
@@ -1821,5 +1914,9 @@ h2{
   .footer .copyright .col-md-6:last-child p {
     margin: 5px 0;
     text-align: center;
+  }
+  .footer-h{
+    text-decoration: underline;
+    text-decoration-color:white;
   }
 }
