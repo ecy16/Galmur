@@ -1468,6 +1468,14 @@ text-align: center;
   background: #ffffff;
 }
 
+
+
+.description {
+  display: none;
+  margin-top: 10px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: -15px 0 25px 0;
@@ -1919,4 +1927,56 @@ text-align: center;
     text-decoration: underline;
     text-decoration-color:white;
   }
+}
+.practice-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.practice-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* background-color: white; */
+  /* border: 1px solid #ddd; */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.practice-item:nth-child(even) .practice-image {
+  order: 2;
+}
+
+.practice-image {
+  flex: 1;
+  padding: 10px;
+}
+
+.practice-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.practice-content {
+  flex: 2;
+  padding: 10px;
+}
+
+.practice-content h3 {
+  margin-top: 0;
+}
+
+.practice-summary {
+  margin-top: 20px;
+  text-align: center;
+  /* background-color: white; */
+  /* border: 1px solid #ddd; */
+  padding: 15px;
+  border-radius: 5px;
 }

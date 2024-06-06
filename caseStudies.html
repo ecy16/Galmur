@@ -128,22 +128,39 @@
                 <li data-filter=".first">Crime</li>
                 <li data-filter=".second">Sports Law</li>
                 <li data-filter=".third">Technology Law</li>
-                <li data-filter=".third">Employement Law</li>
-                <li data-filter=".third">Medical Malpractice</li>
+                <li data-filter=".fourth">Employement Law</li>
+                <li data-filter=".fifth">Medical Malpractice</li>
 
 
               </ul>
             </div>
           </div>
-          <div class="row portfolio-container">
+
+
+
+
+
+
+
+
+
+
+
+
+          
+           <div class="row portfolio-container">
             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
               <div class="portfolio-wrap">
                 <img src="img/portfolio-1.jpg" alt="Portfolio Image" />
                 <figure>
                   <p>Crime</p>
-                  <a href="#">Murder Case</a>
+                  <a href="#" onclick="showDescription(event, 'desc1')">Murder Case</a>
                   <span>01-Jan-2024</span>
                 </figure>
+                
+              </div>
+              <div class="description" id="desc1" style="display: block;">
+                <p>This is a brief description of the murder case that happened on 01-Jan-2024. It details the key events and facts surrounding the case.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
@@ -151,9 +168,12 @@
                 <img src="img/portfolio-2.jpg" alt="Portfolio Image" />
                 <figure>
                   <p>Sports</p>
-                  <a href="#">Sports Contracts</a>
+                  <a href="#" onclick="showDescription(event, 'desc2')">Sports Contracts</a>
                   <span>01-Jan-2024</span>
                 </figure>
+              </div>
+              <div class="description" id="desc2" style="display: block;">
+                <p>This is a brief description of the sports contracts case that happened on 01-Jan-2024. It details the key events and facts surrounding the case.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
@@ -161,46 +181,56 @@
                 <img src="img/portfolio-3.jpg" alt="Portfolio Image" />
                 <figure>
                   <p>Technology Law</p>
-                  <a href="#">Licensing</a>
+                  <a href="#" onclick="showDescription(event, 'desc3')">Licensing</a>
                   <span>01-Jan-2024</span>
                 </figure>
               </div>
+              <div class="description" id="desc3" style="display: block;">
+                <p>This is a brief description of the licensing case that happened on 01-Jan-2024. It details the key events and facts surrounding the case.</p>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fourth">
               <div class="portfolio-wrap">
                 <img src="img/portfolio-4.jpg" alt="Portfolio Image" />
                 <figure>
                   <p>Employment</p>
-                  <a href="#">Contract of employment
-                  </a>
+                  <a href="#" onclick="showDescription(event, 'desc4')">Contract of employment</a>
                   <span>01-Jan-2024</span>
                 </figure>
               </div>
+              <div class="description" id="desc4" style="display: block;">
+                <p>This is a brief description of the contract of employment case that happened on 01-Jan-2024. It details the key events and facts surrounding the case.</p>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fifth">
               <div class="portfolio-wrap">
                 <img src="img/portfolio-5.jpg" alt="Portfolio Image" />
                 <figure>
-                  <p>Business</p>
-                  <a href="#">Breach of contract </a>
+                  <p>Medical Law</p>
+                  <a href="#" onclick="showDescription(event, 'desc5')">Doctors Negligence</a>
                   <span>01-Jan-2024</span>
                 </figure>
               </div>
+              <div class="description" id="desc5" style="display: block;">
+                <p>This is a brief description of the breach of contract case that happened on 01-Jan-2024. It details the key events and facts surrounding the case.</p>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fourth">
               <div class="portfolio-wrap">
                 <img src="img/portfolio-6.jpg" alt="Portfolio Image" />
                 <figure>
                   <p>Finance</p>
-                  <a href="#">Tax Calculation</a>
+                  <a href="#" onclick="showDescription(event, 'desc6')">Tax Calculation</a>
                   <span>01-Jan-2024</span>
                 </figure>
               </div>
+              <div class="description" id="desc6" style="display: block;">
+                <p>This is a brief description of the tax calculation case that happened on 01-Jan-2024. It details the key events and facts surrounding the case.</p>
+              </div>
             </div>
-          </div>
+          </div> 
           <div class="row">
             <div class="col-12 load-more">
-              <a class="btn" href="#">Load More</a>
             </div>
           </div>
         </div>
@@ -227,13 +257,8 @@
           <div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="footer-about">
-                <h2>About Us</h2>
+                <h2>Case Studies</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque eu lectus a leo tristique dictum nec non quam.
-                  Suspendisse convallis, tortor eu placerat rhoncus, lorem quam
-                  iaculis felis, sed eleifend lacus neque id eros. Integer
-                  convallis volutpat neque
                 </p>
               </div>
             </div>
@@ -241,7 +266,7 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4">
                   <div class="footer-link">
-                    <h2>Crime </h2>
+                    <h2>Practice Areas </h2>
                     <a href="">Sports Law</a>
                     <a href="">Technology Law</a>
                     <a href="">Business Law</a>
@@ -249,7 +274,7 @@
                     <a href="">Medical Malpractice</a>
                   </div>
                 </div>
-                
+  
                 <div class="col-md-6 col-lg-4">
                   <div class="footer-link">
                     <h2>Useful Pages</h2>
@@ -263,12 +288,10 @@
                 <div class="col-md-6 col-lg-4">
                   <div class="footer-contact">
                     <h2>Get In Touch</h2>
-                    <p>
-                      <i class="fa fa-map-marker-alt"></i>123 Street, New York,
-                      USA
-                    </p>
-                    <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt"></i>Nairobi,KENYA</p>
+                    <p><i class="fa fa-phone-alt"></i>+254 742 059 794</p>
+  
+                    <p><i class="fa fa-envelope"></i>info@galmurlaw.co.ke</p>
                     <div class="footer-social">
                       <a href=""><i class="fab fa-twitter"></i></a>
                       <a href=""><i class="fab fa-facebook-f"></i></a>

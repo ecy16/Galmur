@@ -104,3 +104,12 @@
     
 })(jQuery);
 
+function showDescription(event, descriptionId) {
+  event.preventDefault();
+  const description = document.getElementById(descriptionId);
+  if (description.style.display === 'block') {
+    description.style.display = 'none';
+  } else {
+    description.style.display = 'block';
+  }
+}
