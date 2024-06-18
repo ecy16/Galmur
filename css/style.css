@@ -261,14 +261,22 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link.active {
   padding: 10px 10px 8px 10px;
 }
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #615f5a;
+
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgb(248, 238, 221);
+}
+.navbar-nav .nav-link.active {
+  color: rgb(248, 238, 221);
   transition: none;
 }
 
 .nav-bar .dropdown-menu {
+  color: rgb(248, 238, 221);
   margin-top: 0;
   border: 0;
   border-radius: 0;
@@ -296,7 +304,7 @@ a:focus {
 
   .nav-bar,
   .nav-bar .navbar {
-    background-color: #706004 !important;
+    background-color: #a58d04 !important;
   }
 
   .nav-bar .navbar-brand {
@@ -308,6 +316,7 @@ a:focus {
     font-size: 15px;
     text-transform: uppercase;
   }
+
 }
 
 @media (max-width: 991.98px) {
