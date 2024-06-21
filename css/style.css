@@ -262,7 +262,7 @@ a:focus {
   padding: 10px 10px 8px 10px;
 }
 .navbar-dark .navbar-nav .nav-link{
-  color: white;
+  color: white-;
 }
 
 
@@ -304,7 +304,8 @@ a:focus {
 
   .nav-bar,
   .nav-bar .navbar {
-    background-color: #a58d04 !important;
+    background-color:#cd853F!important;
+    /* background-color: 205, 133, 63 !important; */
   }
 
   .nav-bar .navbar-brand {
@@ -346,7 +347,7 @@ a:focus {
 .page-header {
   position: relative;
   text-align: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   background-color: #f8f9fa;
 }
 
@@ -544,6 +545,7 @@ a:focus {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  
 }
 
 .about::before {
@@ -724,32 +726,6 @@ text-align: center;
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about .about-text p {
   font-size: 16px;
   color: #000000;
@@ -818,7 +794,7 @@ text-align: center;
   text-align: center;
   font-size: 60px;
   color: #aa9166;
-  background: #121518;
+  background: #6a7232;
   transition: 0.5s;
 }
 
