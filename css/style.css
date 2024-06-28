@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background-image: url("/img/building.jpg");
+  background-image: url("/Galmur/img/building.jpg");
   background-size: cover;
 }
 
@@ -23,7 +23,7 @@ body {
   font-size: 150px;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
-  background-image: url("/img/building.jpg");
+  background-image: url("/Galmur/img/building.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -237,8 +237,9 @@ a:focus {
 /* Nav Bar CSS */
 .nav-bar {
   position: relative;
-  padding: 20px 0;
+  /* padding: 10px 0; */
   transition: 0.3s;
+  height: 5rem;
 }
 
 .nav-bar.nav-sticky {
@@ -285,8 +286,8 @@ a:focus {
 
 .nav-bar .btn {
   color: #ece8e8;
-  border: 2px solid gray;
-  border-radius: 0;
+  border: 1px solid;
+  border-radius: 8px;
 }
 
 .nav-bar .btn:hover {
@@ -295,7 +296,7 @@ a:focus {
 
 @media (min-width: 992px) {
   .nav-bar {
-    padding: 20px 60px;
+    padding: 6px 60px;
   }
 
   .nav-bar.nav-sticky {
@@ -304,7 +305,8 @@ a:focus {
 
   .nav-bar,
   .nav-bar .navbar {
-    background-color:#cd853F!important;
+    background-color:#483D8B!important;
+    
     /* background-color: 205, 133, 63 !important; */
   }
 
@@ -583,8 +585,8 @@ a:focus {
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 7px 6px;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -616,31 +618,7 @@ a:focus {
 .about-text{
   text-align: center;
 }
-.misVis{
-  display: grid;
-    gap: 2rem;
-  margin-top: 40px;
-  height: 300px;
-}
-.mission{
-  grid-row: 1;
-  grid-column: 1;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  text-align: center;
-  
-}
-h2{
-  color: #000000;
-}
-.vision{
-  background: rgba(255, 255, 255, 0.1);
-padding: 2rem;
-  text-align: center;
-  grid-row: 2;
-  grid-column: 2;
-}
+
 .about .section-header {
   margin-bottom: 30px;
   
@@ -651,6 +629,41 @@ padding: 2rem;
   height: 100%;
   background-image: url(/img/Attoney.JPG);
   object-fit: cover;
+}
+
+/* ////mission vision */
+.misVis {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.mission, .vision {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.mission h2, .vision h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.mission p, .vision p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
 }
 
 
@@ -1949,4 +1962,119 @@ text-align: center;
   /* border: 1px solid #ddd; */
   padding: 15px;
   border-radius: 5px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.career-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.career-box h3 {
+  margin-top: 0;
+}
+
+.career-box p {
+  margin: 10px 0;
+}
+
+.career-box .btn {
+  background-color: #323a91;
+  border: none;
+  color: #fff;
+}
+
+.career-box .btn:hover {
+  background-color: #c0a94d;
+}
+
+.career-box:hover {
+  transform: scale(1.05);
+}
+
+
+
+.about-galmur {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.section-header-galmur h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.about-content-galmur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text-galmur {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.about-text-galmur p::before {
+  content: "“";
+  font-size: 36px;
+  color: #e74c3c;
+  vertical-align: top;
+}
+
+.about-text-galmur p::after {
+  content: "”";
+  font-size: 36px;
+  color: #e74c3c;
+  vertical-align: bottom;
+}
+
+.about-image-galmur {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about-image-galmur img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-galmur {
+      padding: 30px 15px;
+  }
+
+  .section-header-galmur h2 {
+      font-size: 28px;
+  }
+
+  .about-content-galmur {
+      flex-direction: column;
+  }
+
+  .about-text-galmur {
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
 }
