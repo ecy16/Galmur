@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(83, 81, 81);
+  color: rgb(10, 10, 10);
 }
 
 a {
@@ -354,6 +354,14 @@ a:focus {
 }
 
 .page-header h2 {
+  position: relative;
+  color: #121518;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.about h2 {
   position: relative;
   color: #121518;
   font-size: 60px;
@@ -668,19 +676,90 @@ a:focus {
 
 
 
+/* <///////////ADVOCATES//////// */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1140px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-text, .team-text {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: background 0.3s ease-in-out;
+}
+
+.about-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text:hover .about-img, .team-text:hover .about-img {
+  opacity: 1;
+}
+
+.team-social {
+  margin-top: 5px;
+}
+
+.team-social a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.team-social a:hover {
+  color: #007bff;
+}
+
+.gali, .Benson {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+}
 
 
-.meet-container{
-  color: #000000;
+.container-advocates{
+  text-align: center;
+  font-size: 18px;
+
 }
-.gali{
-  color:rgb(18, 34, 48);
-text-decoration: underline;
+.meet h2{
+  font-size: 4rem;
 }
-.Benson{
-  color:rgb(18, 34, 48);
-text-decoration: underline;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2001,7 +2080,7 @@ text-align: center;
 
 
 .about-galmur {
-  background-color: #ffffff;
+  background-color: #c6b7b763;
   padding: 60px 20px;
   margin: 20px auto;
   max-width: 1000px;
@@ -2010,14 +2089,11 @@ text-align: center;
 }
 
 .section-header-galmur h2 {
-  font-family: 'EB Garamond', serif;
-  font-size: 32px;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  text-align: center;
-  border-bottom: 2px solid #e74c3c;
-  display: inline-block;
-  padding-bottom: 10px;
+  position: relative;
+  color: #121518;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 .about-content-galmur {
@@ -2030,7 +2106,7 @@ text-align: center;
   flex: 1;
   font-size: 18px;
   line-height: 1.6;
-  color: #555;
+  color: rgb(15, 19, 32);
   text-align: justify;
   padding-right: 20px;
 }
@@ -2059,6 +2135,14 @@ text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.text-galmur {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(24 24 23);
+  text-align: justify;
+  padding-right: 20px;
+}
 
 @media (max-width: 768px) {
   .about-galmur {
@@ -2077,4 +2161,10 @@ text-align: center;
       padding-right: 0;
       margin-bottom: 20px;
   }
+}
+.button-about{
+  background-color: #483D8B;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
