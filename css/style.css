@@ -732,7 +732,7 @@ a:focus {
   color: #007bff;
 }
 
-.gali, .Benson {
+.gali {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
@@ -836,11 +836,16 @@ a:focus {
   font-size: 1.2em;
 }
 
-.gali, .Benson, .team-itemindex h2 {
+.gali .team-itemindex h2 {
   font-size: 1.5em;
   margin: 10px 0;
 }
+.Benson{
+  margin-top: 20px;
+  font-size: 1.5em;
 
+
+}
 .about-textindex p {
   margin: 10px 0;
 }
