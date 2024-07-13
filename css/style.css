@@ -2404,3 +2404,20 @@ container-practice {
 .partners{
   font-size: 50px;
 }
+.container {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-size: 18px;
+  color: #007bff;
+}
