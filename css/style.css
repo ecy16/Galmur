@@ -55,6 +55,38 @@ h5,
 h6 {
   color: #243f5b;
 }
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 80px;
+    -webkit-text-stroke: 0.5px #fff;
+  }
+  
+  .heading-logo {
+    font-size: medium;
+    margin-top: 0.5rem;
+  }
+
+  .limited {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 50px;
+    -webkit-text-stroke: 0.3px #fff;
+  }
+  
+  .heading-logo {
+    font-size: small;
+    margin-top: 0.3rem;
+  }
+
+  .limited {
+    font-size: xx-small;
+  }
+}
 
 a {
   color: #454545;
@@ -235,11 +267,8 @@ a:focus {
     display: none;
   }
 }
-
-/* Nav Bar CSS */
 .nav-bar {
   position: relative;
-  /* padding: 10px 0; */
   transition: 0.3s;
   height: 5rem;
 }
@@ -264,15 +293,15 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link.active {
   padding: 10px 10px 8px 10px;
 }
-.navbar-dark .navbar-nav .nav-link{
-  color: white-;
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
 
-
-
-.navbar-dark .navbar-nav .nav-link:hover{
+.navbar-dark .navbar-nav .nav-link:hover {
   color: rgb(248, 238, 221);
 }
+
 .navbar-nav .nav-link.active {
   color: rgb(248, 238, 221);
   transition: none;
@@ -307,9 +336,7 @@ a:focus {
 
   .nav-bar,
   .nav-bar .navbar {
-    background-color:#243f5b!important;
-    
-    /* background-color: 205, 133, 63 !important; */
+    background-color: #243f5b !important;
   }
 
   .nav-bar .navbar-brand {
@@ -321,7 +348,6 @@ a:focus {
     font-size: 15px;
     text-transform: uppercase;
   }
-
 }
 
 @media (max-width: 991.98px) {
@@ -344,6 +370,30 @@ a:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-bar .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .nav-bar .navbar-brand {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-bar .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
 
 /*******************************/
 /******* Page Header CSS *******/
